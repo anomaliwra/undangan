@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#faf7f2;
+color:#444;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('images/img.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+}
+
+.hero p{
+font-size:20px;
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#d4af37;
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b58b1d;
+transform:scale(1.05);
+}
+
+section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.title h2{
+font-family:'Great Vibes';
+font-size:55px;
+color:#c59d5f;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+margin-bottom:30px;
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.time{
+background:#fff;
+padding:20px;
+width:120px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.time h3{
+font-size:40px;
+color:#c59d5f;
+}
+
+.event{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.event div{
+padding:25px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#222;
+color:white;
+}
+
+.music{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+border:none;
+border-radius:50%;
+background:#d4af37;
+color:white;
+font-size:24px;
+cursor:pointer;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+button.submit{
+background:#d4af37;
+border:none;
+color:white;
+padding:12px 30px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:50px;
+}
+
+.title h2{
+font-size:45px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div>
+
+<p>Undangan Pernikahan</p>
+
+<h1>Andi <br>&<br> Siti</h1>
+
+<p>Sabtu, 20 Desember 2026</p>
+
+<a href="#undangan" class="btn">
+Buka Undangan
+</a>
+
+</div>
+
+</header>
+
+<section id="undangan" class="fade">
+
+<div class="title">
+<h2>Bismillahirrahmanirrahim</h2>
+</div>
+
+<div class="card">
+
+<p style="text-align:center;line-height:2">
+
+Dengan memohon rahmat dan ridho Allah SWT,
+kami mengundang Bapak/Ibu/Saudara/i
+untuk menghadiri acara pernikahan kami.
+
+</p>
+
+<br>
+
+<h2 style="text-align:center;font-family:Great Vibes;font-size:50px;color:#c59d5f;">
+Andi & Siti
+</h2>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<div class="title">
+<h2>Menuju Hari Bahagia</h2>
+</div>
+
+<div class="countdown">
+
+<div class="time">
+<h3 id="days">0</h3>
+Hari
+</div>
+
+<div class="time">
+<h3 id="hours">0</h3>
+Jam
+</div>
+
+<div class="time">
+<h3 id="minutes">0</h3>
+Menit
+</div>
+
+<div class="time">
+<h3 id="seconds">0</h3>
+Detik
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<div class="title">
+<h2>Acara</h2>
+</div>
+
+<div class="event">
+
+<div>
+
+<h3>Akad Nikah</h3>
+
+<p>
+Sabtu, 20 Desember 2026
+</p>
+
+<p>
+08.00 WIB
+</p>
+
+<p>
+Masjid Agung
+</p>
+
+</div>
+
+<div>
+
+<h3>Resepsi</h3>
+
+<p>
+Sabtu, 20 Desember 2026
+</p>
+
+<p>
+11.00 WIB
+</p>
+
+<p>
+Gedung Serbaguna
+</p>
+
+</div>
+
+</div>
+
+<br>
+
+<center>
+
+<a
+class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/dSmTf9U2BC84sFrV7?g_st=ac">
+Lihat Lokasi
+</a>
+
+</center>
+
+</section>
+
+<section class="fade">
+
+<div class="title">
+<h2>Kisah Kami</h2>
+</div>
+
+<div class="card">
+
+<p style="line-height:2">
+
+Awal pertemuan kami menjadi perjalanan yang indah.
+Dengan izin Allah SWT, kami memutuskan
+untuk mengikat janji suci dalam sebuah
+pernikahan.
+
+Semoga menjadi keluarga yang sakinah,
+mawaddah, warahmah.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<div class="title">
+<h2>RSVP</h2>
+</div>
+
+<div class="card">
+
+<input placeholder="Nama">
+
+<textarea rows="5" placeholder="Ucapan & Doa"></textarea>
+
+<button class="submit" onclick="kirim()">
+Kirim
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="font-family:Great Vibes;font-size:45px;">
+Terima Kasih
+</h2>
+
+<p>
+Merupakan suatu kehormatan bagi kami atas kehadiran dan doa restunya.
+</p>
+
+</footer>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<button class="music" onclick="playMusic()">
+🎵
+</button>
+
+<script>
+
+// Countdown
+
+const target=new Date("Dec 20, 2026 08:00:00").getTime();
+
+setInterval(()=>{
+
+let now=new Date().getTime();
+
+let gap=target-now;
+
+let d=Math.floor(gap/(1000*60*60*24));
+
+let h=Math.floor((gap%(1000*60*60*24))/(1000*60*60));
+
+let m=Math.floor((gap%(1000*60*60))/(1000*60));
+
+let s=Math.floor((gap%(1000*60))/1000);
+
+document.getElementById("days").innerHTML=d;
+document.getElementById("hours").innerHTML=h;
+document.getElementById("minutes").innerHTML=m;
+document.getElementById("seconds").innerHTML=s;
+
+},1000);
+
+
+// Musik
+
+let music=document.getElementById("music");
+
+function playMusic(){
+
+if(music.paused){
+
+music.play();
+
+}else{
+
+music.pause();
+
+}
+
+}
+
+
+// RSVP
+
+function kirim(){
+
+alert("Terima kasih atas doa dan konfirmasinya ❤️");
+
+}
+
+
+// Scroll Animation
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
